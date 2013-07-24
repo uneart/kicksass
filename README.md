@@ -6,6 +6,8 @@ Kick-off SASS (SCSS) library
 
 Requires Sass 3.2 and Compass 0.13
 
+You need to import `compass/css3` to use helper mixins like `box-sizing(border-box)`. It is already imported in the `global.scss` so just don't comment it out.
+
 ## Credits
 
 For their inspiring work I thank:
