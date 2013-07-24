@@ -4,6 +4,6 @@
 /**
  * Remove unit from any number value
  */
-@function strip-units($number) {
+@function strip-unit($number) {
   @return $number / ($number * 0 + 1);
 }
