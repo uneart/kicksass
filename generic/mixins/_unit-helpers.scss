@@ -1,0 +1,9 @@
+/*------------------------------------*\
+    $UNIT HELPERS
+\*------------------------------------*/
+/**
+ * Remove unit from any number value
+ */
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
