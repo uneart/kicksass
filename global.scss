@@ -12,6 +12,7 @@
  * Generic Stuff and Mixins
  */
 @import "vars";
+@import "generic/mixins";
 @import "generic/normalize";
 @import "generic/reset";
 @import "generic/clearfix";
@@ -21,7 +22,6 @@
  */
 @import "base/html";
 @import "base/images";
-
 
 /**
  * Helper classes
