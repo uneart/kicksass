@@ -6,9 +6,9 @@ Kick-off SASS (SCSS) library
 
 For their inspiring work I thank:
 
-* **[Nicolas Gallagher](https://twitter.com/necolas)** for his work on normalize.css and many other CSS projects
-* **[Harry Roberts](https://twitter.com/csswizardry)** for his work on inuit.css
-* **[Jonathan Snook](https://twitter.com/snookca)** for his work on SMACSS
-* **[Nicole Sullivan](https://twitter.com/stubbornella)** for her work on OOCSS
-* **[Chris Coyier](https://twitter.com/chriscoyier)** for his work on css-tricks.com and CodePen
+* **[Nicolas Gallagher](https://twitter.com/necolas)** for his work on [normalize.css](http://necolas.github.io/normalize.css) and many other CSS projects
+* **[Harry Roberts](https://twitter.com/csswizardry)** for his work on [inuit.css](http://inuitcss.com)
+* **[Jonathan Snook](https://twitter.com/snookca)** for his work on [SMACSS](http://smacss.com)
+* **[Nicole Sullivan](https://twitter.com/stubbornella)** for her work on [OOCSS](http://oocss.org)
+* **[Chris Coyier](https://twitter.com/chriscoyier)** for his work on [css-tricks.com](http://css-tricks.com) and [CodePen](http://codepen.io)
 
