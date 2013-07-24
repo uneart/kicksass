@@ -10,7 +10,7 @@
  *
  * Thanks to Stuart Robson (http://alwaystwisted.com) for this nice solution. I adapted it slightly to fit my needs.
  */
-@mixin mq( $bp, $ie8: false, $query-1: 'min-width', $bp-2: null, $query-2: 'max-width', $context: $base-font-size ) {
+@mixin mq( $bp, $query-1: 'min-width', $bp-2: null, $query-2: 'max-width', $ie8: false, $context: $base-font-size ) {
 
 	// If only one breakpoint is set.
 	@if $bp-2 == null {
