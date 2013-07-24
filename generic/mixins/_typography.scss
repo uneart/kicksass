@@ -6,6 +6,8 @@
  * Font size mixin with optional line-height setting to keep vertical rythm.
  * Units are in rem with em fallback.
  *
+		`@include font-size( 10px );`
+ *
  * Adopted from inuit.css by Harry Roberts.
  */
 @mixin font-size( $font-size, $line-height:true ) {
