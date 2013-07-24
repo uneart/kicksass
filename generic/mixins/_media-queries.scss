@@ -16,7 +16,7 @@
 	@if $bp-2 == null {
 
 		// Fallback for oldIE (lower than IE9).
-		@if $ie8 == true {
+		@if $ie8 {
 			.lt-ie9 & {
 				@content;
 			}
@@ -37,7 +37,7 @@
 	// If two breakpoints are set.
 	@else {
 		// Fallback for oldIE (lower than IE9).
-		@if $ie8 == true {
+		@if $ie8 {
 			.lt-ie9 & {
 				@content;
 			}
