@@ -2,6 +2,10 @@
 
 Kick-off SASS (SCSS) library
 
+- - -
+***This library is still a WORK IN PROGRESS!***
+- - -
+
 ##Usage
 
 **Requires Sass 3.2 and Compass 0.13**
