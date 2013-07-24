@@ -10,7 +10,7 @@
  *
  * Thanks to Stuart Robson (http://alwaystwisted.com) for this nice solution. I adapted it slightly to fit my needs.
  */
-@mixin mq( $bp, $query-1: 'min-width', $bp-2: null, $query-2: 'max-width', $ie8: false, $context: $base-font-size ) {
+@mixin mq( $bp, $query-1: 'min-width', $bp-2: null, $query-2: 'max-width', $ie8: false, $context: strip-unit($base-font-size) ) {
 
 	// If only one breakpoint is set.
 	@if $bp-2 == null {
@@ -21,14 +21,14 @@
 				@content;
 			}
 
-			@media ( #{$query1}: $bp / $context +em) {
+			@media ( #{$query-1}: $bp / $context ) {
 				@content;
 			}
 		}
 
 		// All browsers + IE9 and up
 		@else {
-			@media screen and ( #{$query1}: $bp / $context +em ) {
+			@media screen and ( #{$query-1}: $bp / $context ) {
 				@content;
 			}
 		}
@@ -42,14 +42,14 @@
 				@content;
 			}
 
-			@media ( #{$query1}: $bp / $context +em ) and ( #{$query2}: $bp-2 / $context +em ) {
+			@media ( #{$query-1}: $bp / $context ) and ( #{$query-2}: $bp-2 / $context ) {
 				@content;
 			}
 		}
 
 		// All browsers + IE9 and up
 		@else {
-			@media ( #{$query1}: $bp / $context +em ) and ( #{$query2}: $bp-2 / $context +em ) {
+			@media ( #{$query-1}: $bp / $context ) and ( #{$query-2}: $bp-2 / $context ) {
 				@content;
 			}
 		}
