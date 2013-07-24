@@ -3,7 +3,8 @@
 \*------------------------------------*/
 
 /**
- * Media Query Mixin for min/max/min-device and max-device width or height.
+ * Media query mixin for min/max/min-device and max-device width or height.
+ * The mixin has a fallback for IE8 which does not support media queries.
  *
 		`@include mq( 320, false, min-width, 640, max-width, 16px );`
  *

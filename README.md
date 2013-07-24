@@ -21,4 +21,3 @@ For their inspiring work I thank:
 * **[Jonathan Snook](https://twitter.com/snookca)** for his work on [SMACSS](http://smacss.com)
 * **[Nicole Sullivan](https://twitter.com/stubbornella)** for her work on [OOCSS](http://oocss.org)
 * **[Chris Coyier](https://twitter.com/chriscoyier)** for his work on [css-tricks.com](http://css-tricks.com) and [CodePen](http://codepen.io)
-
