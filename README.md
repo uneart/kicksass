@@ -1,10 +1,9 @@
 ## kicksass
-========
 
 Kick-off SASS (SCSS) library
 
 ## Credits
-========
+
 For their inspiring work:
 
 * **[Nicolas Gallagher](https://twitter.com/necolas)** for his work on normalize.css and many other CSS projects
