@@ -1,0 +1,76 @@
+/*------------------------------------*\
+		$MIXINS FOR MEDIA QUERIES
+\*------------------------------------*/
+
+/**
+ * Media Query Mixin for min/max/min-device and max-device width or height.
+ *
+		`@include mq( 320, false, min-width, 640, max-width, 16px );`
+ *
+ * Thanks to Stuart Robson (http://alwaystwisted.com) for this nice solution. I adapted it slightly to fit my needs.
+ */
+@mixin mq( $bp, $ie8: false, $query-1: 'min-width', $bp-2: null, $query-2: 'max-width', $context: $base-font-size ) {
+
+	// If only one breakpoint is set.
+	@if $bp-2 == null {
+
+		// Fallback for oldIE (lower than IE9).
+		@if $ie8 == true {
+			.lt-ie9 & {
+				@content;
+			}
+
+			@media ( #{$query1}: $bp / $context +em) {
+				@content;
+			}
+		}
+
+		// All browsers + IE9 and up
+		@else {
+			@media screen and ( #{$query1}: $bp / $context +em ) {
+				@content;
+			}
+		}
+	}
+
+	// If two breakpoints are set.
+	@else {
+		// Fallback for oldIE (lower than IE9).
+		@if $ie8 == true {
+			.lt-ie9 & {
+				@content;
+			}
+
+			@media ( #{$query1}: $bp / $context +em ) and ( #{$query2}: $bp-2 / $context +em ) {
+				@content;
+			}
+		}
+
+		// All browsers + IE9 and up
+		@else {
+			@media ( #{$query1}: $bp / $context +em ) and ( #{$query2}: $bp-2 / $context +em ) {
+				@content;
+			}
+		}
+	}
+}
+
+/**
+ * Orientation media query mixin.
+ */
+@mixin orient( $orientation: landscape ) {
+	@media ( orientation : $orientation ) {
+		@content;
+	}
+}
+
+/**
+ * HiDPI device mixin for retina displays and such.
+ */
+@mixin hdpi() {
+	@media only screen and ( -webkit-min-device-pixel-ratio: 1.3 ),
+	only screen and ( -o-min-device-pixel-ratio: 13/10 ),
+	only screen and ( min-resolution: 120dpi ) {
+		@content;
+	}
+}
