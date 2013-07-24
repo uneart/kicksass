@@ -21,14 +21,14 @@
 				@content;
 			}
 
-			@media ( #{$query-1}: $bp / $context ) {
+			@media ( #{$query-1}: $bp / $context +em) {
 				@content;
 			}
 		}
 
 		// All browsers + IE9 and up
 		@else {
-			@media screen and ( #{$query-1}: $bp / $context ) {
+			@media screen and ( #{$query-1}: $bp / $context +em ) {
 				@content;
 			}
 		}
@@ -42,14 +42,14 @@
 				@content;
 			}
 
-			@media ( #{$query-1}: $bp / $context ) and ( #{$query-2}: $bp-2 / $context ) {
+			@media ( #{$query-1}: $bp / $context +em ) and ( #{$query-2}: $bp-2 / $context +em ) {
 				@content;
 			}
 		}
 
 		// All browsers + IE9 and up
 		@else {
-			@media ( #{$query-1}: $bp / $context ) and ( #{$query-2}: $bp-2 / $context ) {
+			@media ( #{$query-1}: $bp / $context +em ) and ( #{$query-2}: $bp-2 / $context +em ) {
 				@content;
 			}
 		}
